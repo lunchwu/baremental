@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Rev date:</b>
+  <%= @bare_start.rev_date %>
+</p>
+
+<p>
+  <b>Rev note:</b>
+  <%= @bare_start.rev_note %>
+</p>
+
+<p>
+  <b>Author:</b>
+  <%= @bare_start.author %>
+</p>
+
+
+<%= link_to 'Edit', edit_bare_start_path(@bare_start) %> |
+<%= link_to 'Back', bare_starts_path %>

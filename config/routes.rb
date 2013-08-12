@@ -1,4 +1,6 @@
 Baremental::Application.routes.draw do
+  resources :bare_starts
+
   resources :coda_dros
 
   resources :cpu_eaters

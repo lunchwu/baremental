@@ -1,0 +1,27 @@
+<h1>Listing bare_starts</h1>
+
+<table>
+  <tr>
+    <th>Rev date</th>
+    <th>Rev note</th>
+    <th>Author</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @bare_starts.each do |bare_start| %>
+  <tr>
+    <td><%= bare_start.rev_date %></td>
+    <td><%= bare_start.rev_note %></td>
+    <td><%= bare_start.author %></td>
+    <td><%= link_to 'Show', bare_start %></td>
+    <td><%= link_to 'Edit', edit_bare_start_path(bare_start) %></td>
+    <td><%= link_to 'Destroy', bare_start, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Bare start', new_bare_start_path %>

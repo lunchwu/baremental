@@ -1,0 +1,2 @@
+module BareStartsHelper
+end

@@ -11,7 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130812131712) do
+ActiveRecord::Schema.define(:version => 20130812152338) do
+
+  create_table "bare_starts", :force => true do |t|
+    t.string   "rev_date"
+    t.text     "rev_note"
+    t.string   "author"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "coda_dros", :force => true do |t|
     t.integer  "chip_dro"

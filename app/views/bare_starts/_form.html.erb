@@ -1,0 +1,29 @@
+<%= form_for(@bare_start) do |f| %>
+  <% if @bare_start.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@bare_start.errors.count, "error") %> prohibited this bare_start from being saved:</h2>
+
+      <ul>
+      <% @bare_start.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :rev_date %><br />
+    <%= f.text_field :rev_date %>
+  </div>
+  <div class="field">
+    <%= f.label :rev_note %><br />
+    <%= f.text_area :rev_note %>
+  </div>
+  <div class="field">
+    <%= f.label :author %><br />
+    <%= f.text_field :author %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
