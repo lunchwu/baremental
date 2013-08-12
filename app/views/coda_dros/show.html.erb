@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Chip dro:</b>
+  <%= @coda_dro.chip_dro %>
+</p>
+
+<p>
+  <b>Cpu freq:</b>
+  <%= @coda_dro.cpu_freq %>
+</p>
+
+<p>
+  <b>Vmain volt:</b>
+  <%= @coda_dro.vmain_volt %>
+</p>
+
+<p>
+  <b>Fclk:</b>
+  <%= @coda_dro.fclk %>
+</p>
+
+<p>
+  <b>Aclk:</b>
+  <%= @coda_dro.aclk %>
+</p>
+
+<p>
+  <b>Vmain avg:</b>
+  <%= @coda_dro.vmain_avg %>
+</p>
+
+<p>
+  <b>Vmain peak:</b>
+  <%= @coda_dro.vmain_peak %>
+</p>
+
+
+<%= link_to 'Edit', edit_coda_dro_path(@coda_dro) %> |
+<%= link_to 'Back', coda_dros_path %>

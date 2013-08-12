@@ -1,0 +1,35 @@
+<h1>Listing coda_dros</h1>
+
+<table>
+  <tr>
+    <th>Chip dro</th>
+    <th>Cpu freq</th>
+    <th>Vmain volt</th>
+    <th>Fclk</th>
+    <th>Aclk</th>
+    <th>Vmain avg</th>
+    <th>Vmain peak</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @coda_dros.each do |coda_dro| %>
+  <tr>
+    <td><%= coda_dro.chip_dro %></td>
+    <td><%= coda_dro.cpu_freq %></td>
+    <td><%= coda_dro.vmain_volt %></td>
+    <td><%= coda_dro.fclk %></td>
+    <td><%= coda_dro.aclk %></td>
+    <td><%= coda_dro.vmain_avg %></td>
+    <td><%= coda_dro.vmain_peak %></td>
+    <td><%= link_to 'Show', coda_dro %></td>
+    <td><%= link_to 'Edit', edit_coda_dro_path(coda_dro) %></td>
+    <td><%= link_to 'Destroy', coda_dro, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Coda dro', new_coda_dro_path %>

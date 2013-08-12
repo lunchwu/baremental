@@ -1,0 +1,45 @@
+<%= form_for(@coda_dro) do |f| %>
+  <% if @coda_dro.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@coda_dro.errors.count, "error") %> prohibited this coda_dro from being saved:</h2>
+
+      <ul>
+      <% @coda_dro.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :chip_dro %><br />
+    <%= f.text_field :chip_dro %>
+  </div>
+  <div class="field">
+    <%= f.label :cpu_freq %><br />
+    <%= f.text_field :cpu_freq %>
+  </div>
+  <div class="field">
+    <%= f.label :vmain_volt %><br />
+    <%= f.text_field :vmain_volt %>
+  </div>
+  <div class="field">
+    <%= f.label :fclk %><br />
+    <%= f.text_field :fclk %>
+  </div>
+  <div class="field">
+    <%= f.label :aclk %><br />
+    <%= f.text_field :aclk %>
+  </div>
+  <div class="field">
+    <%= f.label :vmain_avg %><br />
+    <%= f.text_field :vmain_avg %>
+  </div>
+  <div class="field">
+    <%= f.label :vmain_peak %><br />
+    <%= f.text_field :vmain_peak %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -11,7 +11,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130812105856) do
+ActiveRecord::Schema.define(:version => 20130812131712) do
+
+  create_table "coda_dros", :force => true do |t|
+    t.integer  "chip_dro"
+    t.integer  "cpu_freq"
+    t.decimal  "vmain_volt"
+    t.integer  "fclk"
+    t.integer  "aclk"
+    t.decimal  "vmain_avg"
+    t.decimal  "vmain_peak"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "cpu_eaters", :force => true do |t|
     t.integer  "pclk",        :default => 0

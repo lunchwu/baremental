@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  chip_dro: 1
+  cpu_freq: 1
+  vmain_volt: 9.99
+  fclk: 1
+  aclk: 1
+  vmain_avg: 9.99
+  vmain_peak: 9.99
+
+two:
+  chip_dro: 1
+  cpu_freq: 1
+  vmain_volt: 9.99
+  fclk: 1
+  aclk: 1
+  vmain_avg: 9.99
+  vmain_peak: 9.99

@@ -1,4 +1,6 @@
 Baremental::Application.routes.draw do
+  resources :coda_dros
+
   resources :cpu_eaters
 
   # The priority is based upon order of creation:
