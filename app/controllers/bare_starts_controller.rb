@@ -44,7 +44,7 @@ class BareStartsController < ApplicationController
 
     respond_to do |format|
       if @bare_start.save
-        format.html { redirect_to(@bare_start, :notice => 'Bare start was successfully created.') }
+        format.html { redirect_to(bare_starts_url, :notice => 'Bare start was successfully created.') }
         format.xml  { render :xml => @bare_start, :status => :created, :location => @bare_start }
       else
         format.html { render :action => "new" }
@@ -60,7 +60,7 @@ class BareStartsController < ApplicationController
 
     respond_to do |format|
       if @bare_start.update_attributes(params[:bare_start])
-        format.html { redirect_to(@bare_start, :notice => 'Bare start was successfully updated.') }
+        format.html { redirect_to(bare_starts_url, :notice => 'Bare start was successfully updated.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }

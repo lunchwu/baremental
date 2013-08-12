@@ -8,7 +8,22 @@
 </head>
 <body>
 
+<div id="columns">
+<div id="banner">
+<%= link_to image_tag('rails.png'), bare_starts_path %>
+<%= @page_title || "BareMental data Website"%>
+</div>
+
+<div id="side">
+<%= link_to "CPU Eater Table page", cpu_eaters_path %><br />
+<%= link_to "CODA DRO Page", coda_dros_path %><br />
+</div>
+
+<div id="table_show">
 <%= yield %>
+</div>
+</div>
+
 
 </body>
 </html>

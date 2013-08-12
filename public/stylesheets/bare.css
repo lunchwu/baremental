@@ -1,0 +1,46 @@
+#banner {
+background: #9c9;
+padding-top: 10px;
+padding-bottom: 10px;
+border-bottom: 2px solid;
+font: small-caps 40px/40px "Times New Roman", serif;
+text-align: center
+}
+#banner img {
+float:left;
+height:1em
+}
+#columns {
+background: #141;
+}
+#columns #side {
+float: left;
+padding-top: 1em;
+padding-left: 1em;
+width: 16em;
+background: #141;
+}
+#columns #side a{
+color: #bfb;
+font-size: 1.3em;
+}
+#table_show {
+margin-left: 17em;
+padding-top: 4ex;
+padding-left: 2em;
+background: white;
+}
+h1 {
+font: 150% sans-serif;
+color: #226;
+border-bottom: 3px dotted #77d;
+}
+table {
+border-collapse: collapse;
+}
+table tr td, table tr th{
+padding: 5px;
+vertical-align: top;
+border: 1px solid black
+}
+
