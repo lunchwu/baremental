@@ -1,0 +1,57 @@
+<%= form_for(@cpu_eater) do |f| %>
+  <% if @cpu_eater.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cpu_eater.errors.count, "error") %> prohibited this cpu_eater from being saved:</h2>
+
+      <ul>
+      <% @cpu_eater.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Record_Name%><br />
+    <%= f.text_field :recname %>
+  </div>
+  <div class="field">
+    <%= f.label :pclk %><br />
+    <%= f.text_field :pclk %>
+  </div>
+  <div class="field">
+    <%= f.label :dclk %><br />
+    <%= f.text_field :dclk %>
+  </div>
+  <div class="field">
+    <%= f.label :aclk %><br />
+    <%= f.text_field :aclk %>
+  </div>
+  <div class="field">
+    <%= f.label :m2_vmain %><br />
+    <%= f.text_field :m2_vmain %>
+  </div>
+  <div class="field">
+    <%= f.label :c2_m0_vmain %><br />
+    <%= f.text_field :c2_m0_vmain %>
+  </div>
+  <div class="field">
+    <%= f.label :one_core %><br />
+    <%= f.text_field :one_core %>
+  </div>
+  <div class="field">
+    <%= f.label :dual_core %><br />
+    <%= f.text_field :dual_core %>
+  </div>
+  <div class="field">
+    <%= f.label :tri_core %><br />
+    <%= f.text_field :tri_core %>
+  </div>
+  <div class="field">
+    <%= f.label :four_core %><br />
+    <%= f.text_field :four_core %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

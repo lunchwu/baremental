@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Pclk:</b>
+  <%= @cpu_eater.pclk %>
+</p>
+
+<p>
+  <b>Dclk:</b>
+  <%= @cpu_eater.dclk %>
+</p>
+
+<p>
+  <b>Aclk:</b>
+  <%= @cpu_eater.aclk %>
+</p>
+
+<p>
+  <b>M2 vmain:</b>
+  <%= @cpu_eater.m2_vmain %>
+</p>
+
+<p>
+  <b>C2 m0 vmain:</b>
+  <%= @cpu_eater.c2_m0_vmain %>
+</p>
+
+<p>
+  <b>One core:</b>
+  <%= @cpu_eater.one_core %>
+</p>
+
+<p>
+  <b>Dual core:</b>
+  <%= @cpu_eater.dual_core %>
+</p>
+
+<p>
+  <b>Tri core:</b>
+  <%= @cpu_eater.tri_core %>
+</p>
+
+<p>
+  <b>Four core:</b>
+  <%= @cpu_eater.four_core %>
+</p>
+
+
+<%= link_to 'Edit', edit_cpu_eater_path(@cpu_eater) %> |
+<%= link_to 'Back', cpu_eaters_path %>

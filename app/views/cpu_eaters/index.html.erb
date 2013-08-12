@@ -1,0 +1,42 @@
+<h1>Listing cpu_eaters</h1>
+
+<table style="border: 1px solid black">
+  <tr>
+    <th>Record name</th>
+    <th>Pclk</th>
+    <th>Dclk</th>
+    <th>Aclk</th>
+    <th>M2 vmain</th>
+    <th>C2 m0 vmain</th>
+    <th>One core</th>
+    <th>Dual core</th>
+    <th>Tri core</th>
+    <th>Four core</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% cpu_eaters = @cpu_eaters.select {|x| x.recname == "fwu_test"} %>
+<% cpu_eaters.each do |cpu_eater| %>
+  <tr>
+    <td><%= cpu_eater.recname%></td>
+    <td><%= cpu_eater.pclk %></td>
+    <td><%= cpu_eater.dclk %></td>
+    <td><%= cpu_eater.aclk %></td>
+    <td><%= cpu_eater.m2_vmain %></td>
+    <td><%= cpu_eater.c2_m0_vmain %></td>
+    <td><%= cpu_eater.one_core %></td>
+    <td><%= cpu_eater.dual_core %></td>
+    <td><%= cpu_eater.tri_core %></td>
+    <td><%= cpu_eater.four_core %></td>
+    <td><%= link_to 'Show', cpu_eater %></td>
+    <td><%= link_to 'Edit', edit_cpu_eater_path(cpu_eater) %></td>
+    <td><%= link_to 'Destroy', cpu_eater, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Cpu eater', new_cpu_eater_path %>

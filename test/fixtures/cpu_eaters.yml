@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  pclk: 1
+  dclk: 1
+  aclk: 1
+  m2_vmain: 9.99
+  c2_m0_vmain: 9.99
+  one_core: 9.99
+  dual_core: 9.99
+  tri_core: 9.99
+  four_core: 9.99
+
+two:
+  pclk: 1
+  dclk: 1
+  aclk: 1
+  m2_vmain: 9.99
+  c2_m0_vmain: 9.99
+  one_core: 9.99
+  dual_core: 9.99
+  tri_core: 9.99
+  four_core: 9.99
